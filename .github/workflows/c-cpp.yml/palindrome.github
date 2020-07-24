@@ -1,0 +1,24 @@
+name: C/C++ CI
+
+#include <stdio.h>
+int main()
+
+{
+
+  int num,rev_num= 0,rem,temp;
+  printf("Enter the number:\n");
+  scanf("%d",&num);
+   temp=num;
+   while(temp!=0)
+   {
+      rem=temp%10;
+      rev_num=rev_num*10+rem;
+      temp/=10;
+   } 
+   if(rev_num == num)
+   printf("It's a palindrome");
+   else
+   printf("not a palindrome");
+   return 0;
+
+}
