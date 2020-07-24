@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() 
+{
+  int f=0,s=1,t,i,n;
+  printf("Enter the no. of terms:\n");
+  scanf("%d",&n);
+  printf("%d\t%d\t",f,s);
+  for(i= 2;i<n;++i)
+  {
+    t=f+s;
+    printf("%d\t",t);
+    f=s;
+    s=t;
+  }
+  return 0;
+}
